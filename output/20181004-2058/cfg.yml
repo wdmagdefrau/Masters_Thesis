@@ -1,0 +1,29 @@
+experiment:
+    type: 'cv'  # 'single', 'cv'
+    n_folds: 10  # number of folds to use if cv is active
+    np_random_seed: 52
+    years: [1]  # [1, 2, 3, 4, 5]
+    shuffle_data: True
+    test_share: 0.1
+    algorithm: 'multilayer_perceptron'  # 'random_guess', multilayer_perceptron', 'rf', 'gradient_boosting'
+imputer_params:
+    strategy: 'mean'  # 'mean', 'min'
+    new_features: '1-hot'  # False, 'sum', '1-hot'
+    only_nan_data: False # True, False
+processor_params:
+    normalize: True
+    max_nan_share: 1.0
+algo_params:  # parameters for multilayer perceptron
+    tf_seed: 37050
+    dev_share: 0.5
+    batch_iterator_type: 'oversample'  # 'normal', 'oversample'
+    n_hidden: [100, 50]
+    dropout_keep_prob: 0.5
+    l2_reg_factor: 0.001
+    num_epochs: 50
+    batch_size: 100
+    evaluate_every_n_steps: 10
+    plot_training: True # Edit code within the multilayer_perceptron.fit() function to change plots
+analysis:
+    print_results: ['accuracy', 'precision', 'recall', 'log_loss', 'roc_auc']
+    plot_roc: True
