@@ -10,7 +10,7 @@ from utils import split_dataset
 class MultilayerPerceptron(Algorithm):
 
     def __init__(self, n_input, n_hidden, dropout_keep_prob, l2_reg_factor,
-            dev_share, num_epochs, batch_size, batch_iterator_type,
+            dev_share, num_epochs, batch_size, batch_iterator_type, learning_rate,
             evaluate_every_n_steps, plot_training, tf_seed):
         # Structure of model
         self.n_input = n_input
@@ -22,6 +22,7 @@ class MultilayerPerceptron(Algorithm):
         self.dev_share = dev_share
         self.num_epochs = num_epochs
         self.batch_size = batch_size
+        self.learning_rate = learning_rate
         self.batch_iterator_type = batch_iterator_type
         self.evaluate_every_n_steps = evaluate_every_n_steps
         self.plot_training = plot_training
@@ -83,7 +84,7 @@ class MultilayerPerceptron(Algorithm):
             train_acc_val.append(acc_val)
             train_time.append(time.clock())
 
-
+            time.sleep(0)
 
             if i % self.evaluate_every_n_steps == 0:
                 # Begin timing the training run
@@ -178,7 +179,7 @@ class MultilayerPerceptron(Algorithm):
 
         # Train operation
         # TODO: add so that we could change learning rate?
-        optimize = tf.train.AdamOptimizer().minimize(regularized_loss)
+        optimize = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(regularized_loss)
 
         # Save important nodes to dict and return
         graph = {'x_input': x_input,
