@@ -176,13 +176,6 @@ def show_results(results, year, print_results=[], plot_roc=False):
         plt.xlabel('False positive rate')
         plt.ylabel('True positive rate')
 
-    plt.figure()
-    plt.title('Accuracy vs Time')
-    #plt.plot((0, 1), (0, 1), ls='--', c='k')
-    plt.plot(results['run_time'], results['accuracy'])
-    plt.xlabel('Time (seconds)')
-    plt.ylabel('Accuracy (%)')
-
 if __name__ == '__main__':
     try:
         yaml_path = r"C:\Users\Derrick\Documents\GitHub\Masters_Thesis\configs\config_mlp.yml"
