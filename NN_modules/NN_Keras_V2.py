@@ -66,7 +66,8 @@ def main(yaml_path='./config.yml', run_name=None):
     grid = GridSearchCV(estimator=model, param_grid=param_grid, n_jobs=-1)  # scoring='f1_weighted'
     #  TODO add validation data to .fit(X_train, Y_train, [WHERE?/HOW?]) so that we can use binary crossentropy as a metric in create_model() .compile
     #  TODO potential fix: alter the shapes of the datasets so that they are all identical: X_
-    # TODO potential fix: remove the extra list from inside of np.array() when defining X_train
+    #  TODO potential fix: remove the extra list from inside of np.array() when defining X_train
+    # fit_time_start = time.time()
     grid_result['fit_info'] = grid.fit(X_train, Y_train, validation_data=(X_test, Y_test))
     y_true, y_prob = Y_test, grid.predict_proba(X_test)
     y_pred = np.argmax(y_prob, axis=1)
@@ -115,9 +116,9 @@ def main(yaml_path='./config.yml', run_name=None):
     mean_test_score = grid_result['fit_info'].cv_results_['mean_test_score']
     test_stds = grid_result['fit_info'].cv_results_['std_test_score']
     params = grid_result['fit_info'].cv_results_['params']
-    for mean_test, test_stdev, mean_time, time_stdev, param in zip(mean_test_score,
-                                                                   test_stds,
-                                                                   params):
+    for mean_test, test_stdev, param in zip(mean_test_score,
+                                            test_stds,
+                                            params):
         print("%f (%f) with: %r" % (mean_test, test_stdev, param))
 
     ##############################################################

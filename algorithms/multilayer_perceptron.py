@@ -1,3 +1,4 @@
+import time
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -58,9 +59,13 @@ class MultilayerPerceptron(Algorithm):
         dev_batch_nr = []
         dev_loss_val = []
         dev_acc_val = []
+        dev_time = []
         #  TODO need to figure out what enumerate does --> find out what train_batch_nr contains
         for i, (x, y) in enumerate(batch_iter(x_train, y_train,
                 self.num_epochs, self.batch_size)):
+            # Begin timing the training run
+
+            #start_time = time.time()
             # Train
             feed_dict = {
                     self.graph_nodes['x_input']: x,
@@ -72,10 +77,17 @@ class MultilayerPerceptron(Algorithm):
                 self.graph_nodes['loss']], feed_dict=feed_dict)
             _, acc_val = self.sess.run([self.graph_nodes['optimize'],
                 self.graph_nodes['accuracy']], feed_dict=feed_dict)
+            #run_time = time.time() - start_time
             train_batch_nr.append(i)
             train_loss_val.append(loss_val)
             train_acc_val.append(acc_val)
+
+            time.sleep(0)
+
             if i % self.evaluate_every_n_steps == 0:
+                # Begin timing the training run
+                #time.sleep(0)
+                #start_time = time.time()
                 feed_dict = {
                         self.graph_nodes['x_input']: x_dev,
                         self.graph_nodes['y_input']: y_dev,
@@ -85,9 +97,12 @@ class MultilayerPerceptron(Algorithm):
                         feed_dict=feed_dict)
                 acc_val = self.sess.run(self.graph_nodes['accuracy'],
                         feed_dict=feed_dict)
+                #stop_time = time.time()
+                #run_time = stop_time - start_time
                 dev_batch_nr.append(i)
                 dev_loss_val.append(loss_val)
                 dev_acc_val.append(acc_val)
+                dev_time.append(time.clock())
 
         if self.plot_training:
             plt.plot(train_batch_nr, train_loss_val)
@@ -106,6 +121,11 @@ class MultilayerPerceptron(Algorithm):
             plt.legend(['train', 'test'], loc='upper left')
             plt.show()
 
+            plt.plot(dev_time, dev_acc_val)
+            plt.title("Validation Accuracy vs Run Time")
+            plt.ylabel("Accuracy (%)")
+            plt.xlabel('Time (seconds)')
+            plt.show()
 
     def predict_proba(self, samples):
         """Make probability predictions with the trained model."""

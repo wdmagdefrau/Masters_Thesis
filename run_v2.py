@@ -85,7 +85,7 @@ def perform_one_experiment(X_train, Y_train, X_test, Y_test, config):
 
     # Calculate and save results
     elapsed_time_secs = time.time() - start_time  # Calculate elapsed time
-    results['run-time'] = elapsed_time_secs
+    results['run_time'] = elapsed_time_secs
     results['log_loss'] = metrics.log_loss(Y_test, pred_proba[:, 1])
     results['accuracy'] = metrics.accuracy_score(Y_test, pred)
     results['confusion_matrix'] = metrics.confusion_matrix(Y_test, pred, labels=[0, 1])
@@ -176,10 +176,9 @@ def show_results(results, year, print_results=[], plot_roc=False):
         plt.xlabel('False positive rate')
         plt.ylabel('True positive rate')
 
-
 if __name__ == '__main__':
     try:
-        yaml_path = r"C:\Users\derrick.magdefrau\Desktop\Master's Thesis\[10.5.18] Bankruptcy_Prediction\configs\config_mlp.yml"
+        yaml_path = r"C:\Users\Derrick\Documents\GitHub\Masters_Thesis\configs\config_mlp.yml"
     except IndexError as e:
         print('You have to specify the config.yaml to use as `python run.py '
             'example_config.yaml`')

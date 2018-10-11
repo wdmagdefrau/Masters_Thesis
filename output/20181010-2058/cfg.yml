@@ -20,10 +20,10 @@ algo_params:  # parameters for multilayer perceptron
     n_hidden: [100, 50]
     dropout_keep_prob: 0.5
     l2_reg_factor: 0.001
-    num_epochs: 1000  # BEST RESULT: 1000
-    batch_size: 500  # BEST RESULT: 500
-    evaluate_every_n_steps: 10
+    num_epochs: 100  # BEST RESULT: 1000
+    batch_size: 50  # BEST RESULT: 500
+    evaluate_every_n_steps: 1
     plot_training: True # Edit code within the multilayer_perceptron.fit() function to change plots
 analysis:
-    print_results: ['accuracy', 'precision', 'recall', 'log_loss', 'roc_auc', 'run_time']
+    print_results: ['accuracy', 'precision', 'recall', 'log_loss', 'roc_auc']
     plot_roc: True
