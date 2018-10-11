@@ -179,7 +179,7 @@ def show_results(results, year, print_results=[], plot_roc=False):
 
 if __name__ == '__main__':
     try:
-        yaml_path = r"C:\Users\derrick.magdefrau\Desktop\Master's Thesis\[10.5.18] Bankruptcy_Prediction\configs\config_mlp.yml"
+        yaml_path = r"C:\Users\Derrick\Documents\GitHub\Masters_Thesis\configs\config_mlp.yml"
     except IndexError as e:
         print('You have to specify the config.yaml to use as `python run.py '
             'example_config.yaml`')
