@@ -59,13 +59,13 @@ class MultilayerPerceptron(Algorithm):
         dev_batch_nr = []
         dev_loss_val = []
         dev_acc_val = []
+        train_time = []
         dev_time = []
         #  TODO need to figure out what enumerate does --> find out what train_batch_nr contains
         for i, (x, y) in enumerate(batch_iter(x_train, y_train,
                 self.num_epochs, self.batch_size)):
             # Begin timing the training run
-
-            #start_time = time.time()
+            time.sleep(0)
             # Train
             feed_dict = {
                     self.graph_nodes['x_input']: x,
@@ -81,12 +81,13 @@ class MultilayerPerceptron(Algorithm):
             train_batch_nr.append(i)
             train_loss_val.append(loss_val)
             train_acc_val.append(acc_val)
+            train_time.append(time.clock())
 
-            time.sleep(0)
+
 
             if i % self.evaluate_every_n_steps == 0:
                 # Begin timing the training run
-                #time.sleep(0)
+                time.sleep(0)
                 #start_time = time.time()
                 feed_dict = {
                         self.graph_nodes['x_input']: x_dev,

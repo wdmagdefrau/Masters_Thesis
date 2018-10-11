@@ -8,7 +8,8 @@ import pandas as pd
 
 def load_dataset(year, shuffle=True):
     """Loads chosen data set, mixes it and returns."""
-    main_path = r"C:\Users\Derrick\Documents\GitHub\Masters_Thesis\data"
+    #main_path = r"C:\Users\Derrick\Documents\GitHub\Masters_Thesis\data"  # unhide for desktop use
+    main_path = r"C:\Users\derrick.magdefrau\Documents\GitHub\Masters_Thesis\data"  # unhide for laptop use
     file_name = '{}year.csv'.format(year)
     file_path = os.path.join(main_path, file_name)
     df = pd.read_csv(file_path, na_values='?')
