@@ -85,7 +85,7 @@ def perform_one_experiment(X_train, Y_train, X_test, Y_test, config):
 
     # Calculate and save results
     elapsed_time_secs = time.time() - start_time  # Calculate elapsed time
-    results['run-time'] = elapsed_time_secs
+    results['run_time'] = elapsed_time_secs
     results['log_loss'] = metrics.log_loss(Y_test, pred_proba[:, 1])
     results['accuracy'] = metrics.accuracy_score(Y_test, pred)
     results['confusion_matrix'] = metrics.confusion_matrix(Y_test, pred, labels=[0, 1])
