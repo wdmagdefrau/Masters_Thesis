@@ -22,7 +22,7 @@ algo_params:  # parameters for multilayer perceptron
     l2_reg_factor: 0.001
     num_epochs: 1000  # BEST RESULT: 1000
     batch_size: 1500  # BEST RESULT: 500
-    learning_rate: 0.01
+    learning_rate: 0.001
     evaluate_every_n_steps: 10
     plot_training: True # Edit code within the multilayer_perceptron.fit() function to change plots
 analysis:
