@@ -107,26 +107,28 @@ class MultilayerPerceptron(Algorithm):
                 dev_time.append(time.clock())
 
         if self.plot_training:
+            #  Unhide to show loss comparison plot
+            #plt.plot(train_batch_nr, train_loss_val)
+            #plt.plot(dev_batch_nr, dev_loss_val)
+            #plt.title('Model Loss Comparison')
+            #plt.ylabel('Error')
+            #plt.xlabel('Training Sample Count')
+            #plt.legend(['train', 'test'], loc='upper left')
+            #plt.show()
+
+            #  Unhide to show accuracy comparison plot
+            #plt.plot(train_batch_nr, train_acc_val)
+            #plt.plot(dev_batch_nr, dev_acc_val)
+            #plt.title('Model Accuracy Comparison')
+            #plt.ylabel('Accuracy')
+            #plt.xlabel('Training Sample Count')
+            #plt.legend(['train', 'test'], loc='upper left')
+            #plt.show()
+
             plt.plot(train_batch_nr, train_loss_val)
-            plt.plot(dev_batch_nr, dev_loss_val)
-            plt.title('Model Loss Comparison')
-            plt.ylabel('Error')
-            plt.xlabel('Training Sample Count')
-            plt.legend(['train', 'test'], loc='upper left')
-            plt.show()
-
-            plt.plot(train_batch_nr, train_acc_val)
-            plt.plot(dev_batch_nr, dev_acc_val)
-            plt.title('Model Accuracy Comparison')
-            plt.ylabel('Accuracy')
-            plt.xlabel('Training Sample Count')
-            plt.legend(['train', 'test'], loc='upper left')
-            plt.show()
-
-            plt.plot(dev_time, dev_acc_val)
-            plt.title("Validation Accuracy vs Run Time")
-            plt.ylabel("Accuracy (%)")
-            plt.xlabel('Time (seconds)')
+            plt.title("Training Loss Over Time")
+            plt.ylabel("Cost")
+            plt.xlabel('Iterations')
             plt.show()
 
     def predict_proba(self, samples):
