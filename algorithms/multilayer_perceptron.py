@@ -107,11 +107,11 @@ class MultilayerPerceptron(Algorithm):
                 dev_time.append(time.clock())
 
         if self.plot_training:
-            plt.plot(train_batch_nr, train_loss_val)
-            plt.title("Training Loss Over Time")
-            plt.ylabel("Cost")
-            plt.xlabel('Iterations')
-            plt.show()
+            #plt.plot(train_batch_nr, train_loss_val)
+            #plt.title("Training Loss Over Time")
+            #plt.ylabel("Cost")
+            #plt.xlabel('Iterations')
+            #plt.show()
 
             plt.plot(train_batch_nr, train_loss_val)
             plt.plot(dev_batch_nr, dev_loss_val)
