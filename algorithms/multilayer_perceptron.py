@@ -10,7 +10,7 @@ from utils import split_dataset
 class MultilayerPerceptron(Algorithm):
 
     def __init__(self, n_input, n_hidden, dropout_keep_prob, l2_reg_factor,
-            dev_share, num_epochs, batch_size, batch_iterator_type,
+            dev_share, num_epochs, batch_size, learning_rate, batch_iterator_type,
             evaluate_every_n_steps, plot_training, tf_seed):
         # Structure of model
         self.n_input = n_input
@@ -22,6 +22,7 @@ class MultilayerPerceptron(Algorithm):
         self.dev_share = dev_share
         self.num_epochs = num_epochs
         self.batch_size = batch_size
+        self.learning_rate = learning_rate
         self.batch_iterator_type = batch_iterator_type
         self.evaluate_every_n_steps = evaluate_every_n_steps
         self.plot_training = plot_training
@@ -105,6 +106,12 @@ class MultilayerPerceptron(Algorithm):
                 dev_time.append(time.clock())
 
         if self.plot_training:
+            plt.plot(dev_time, dev_acc_val)
+            plt.title("Validation Accuracy vs Run Time")
+            plt.ylabel("Accuracy (%)")
+            plt.xlabel('Time (seconds)')
+            plt.show()
+
             plt.plot(train_batch_nr, train_loss_val)
             plt.plot(dev_batch_nr, dev_loss_val)
             plt.title('Model Loss Comparison')
@@ -119,12 +126,6 @@ class MultilayerPerceptron(Algorithm):
             plt.ylabel('Accuracy')
             plt.xlabel('Training Sample Count')
             plt.legend(['train', 'test'], loc='upper left')
-            plt.show()
-
-            plt.plot(dev_time, dev_acc_val)
-            plt.title("Validation Accuracy vs Run Time")
-            plt.ylabel("Accuracy (%)")
-            plt.xlabel('Time (seconds)')
             plt.show()
 
     def predict_proba(self, samples):
@@ -177,7 +178,7 @@ class MultilayerPerceptron(Algorithm):
 
         # Train operation
         # TODO: add so that we could change learning rate?
-        optimize = tf.train.AdamOptimizer().minimize(regularized_loss)
+        optimize = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(regularized_loss)
 
         # Save important nodes to dict and return
         graph = {'x_input': x_input,
