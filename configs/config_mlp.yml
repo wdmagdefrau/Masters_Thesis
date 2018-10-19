@@ -17,12 +17,12 @@ algo_params:  # parameters for multilayer perceptron
     tf_seed: 37050
     dev_share: 0.5
     batch_iterator_type: 'oversample'  # 'normal', 'oversample'  OPTIMAL: 'oversample'
-    n_hidden: [100, 50]
-    dropout_keep_prob: 0.55  # OPTIMAL DROPOUT_KEEP_PROB ~ 0.55
-    l2_reg_factor: 0.0006  # OPTIMAL L2_REG_FACTOR ~ 0.0006
-    num_epochs: 1000
-    batch_size: 2000  # OPTIMAL BATCH_SIZE ~ 2000 (with learning_rate = 0.025)
-    learning_rate: 0.025  # OPTIMAL LEARNING_RATE ~
+    n_hidden: [20, 10]
+    dropout_keep_prob: 0.50  # OPTIMAL DROPOUT_KEEP_PROB FOR [100, 50] ~ 0.55
+    l2_reg_factor: 0.0001  # OPTIMAL L2_REG_FACTOR FOR [100, 50] ~ 0.0006
+    num_epochs: 500
+    batch_size: 500  # OPTIMAL BATCH_SIZE FOR [100, 50] ~ 2000 (with learning_rate = 0.025)
+    learning_rate: 0.05  # OPTIMAL LEARNING_RATE FOR [100, 50] ~ 0.025 (?) CHECK NOTEBOOK FOR CONFIRMATION
     evaluate_every_n_steps: 1  # decrease number of steps to show greater precision in test plots
     plot_training: True # Edit code within the multilayer_perceptron.fit() function to change plots
 analysis:

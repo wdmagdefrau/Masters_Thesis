@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/configs/config_mlp.yml" line="19" />
+  </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <list default="true" id="b5c90662-6557-4c17-9c78-06fe7c816530" name="Default" comment="Working batch optimization (change batch size and learning rate in config file)">
-=======
-    <list default="true" id="b5c90662-6557-4c17-9c78-06fe7c816530" name="Default" comment="V2 - Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized">
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config_mlp.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config_mlp.yml" afterDir="false" />
-=======
     <list default="true" id="b5c90662-6557-4c17-9c78-06fe7c816530" name="Default" comment="Committing at home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+      <change beforePath="$PROJECT_DIR$/algorithms/multilayer_perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/multilayer_perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config_mlp.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config_mlp.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +16,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$run_v2.coverage" NAME="run_v2 Coverage Results" MODIFIED="1538715392026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Masters_Thesis$run_v2.coverage" NAME="run_v2 Coverage Results" MODIFIED="1539243388284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$NN_Keras_V2.coverage" NAME="NN_Keras_V2 Coverage Results" MODIFIED="1538528133046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NN_modules" />
-    <SUITE FILE_PATH="coverage/_10_5_18__Bankruptcy_Prediction$run_v2.coverage" NAME="run_v2 Coverage Results" MODIFIED="1539124807479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$PCA.coverage" NAME="PredictBankruptcy Coverage Results" MODIFIED="1534829394310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$PredictBankruptcy.coverage" NAME="PredictBankruptcy Coverage Results" MODIFIED="1536904486008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$NN.coverage" NAME="NN Coverage Results" MODIFIED="1536300524488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NN_modules" />
+    <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$PCA.coverage" NAME="PredictBankruptcy Coverage Results" MODIFIED="1534829394310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Masters_Thesis$run_v2.coverage" NAME="run_v2 Coverage Results" MODIFIED="1539243388284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$PredictBankruptcy.coverage" NAME="PredictBankruptcy Coverage Results" MODIFIED="1536904486008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bankruptcy_Prediction$run_v2.coverage" NAME="run_v2 Coverage Results" MODIFIED="1538715392026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/_10_5_18__Bankruptcy_Prediction$run_v2.coverage" NAME="run_v2 Coverage Results" MODIFIED="1539124807479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -163,20 +158,14 @@
     <session id="1775551395">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-<<<<<<< HEAD
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
-=======
           <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -193,57 +182,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1348" />
-<<<<<<< HEAD
-          <entry key="txt" value="469" />
-          <entry key="yml" value="25" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="469" />
-          <entry key="Python" value="1348" />
-          <entry key="YAML" value="25" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
-    </session>
-    <session id="-743313035">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="413" />
-          <entry key="txt" value="138" />
-          <entry key="yml" value="38" />
-=======
+          <entry key="py" value="1456" />
           <entry key="txt" value="487" />
-          <entry key="yml" value="25" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+          <entry key="yml" value="305" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
-          <entry key="PLAIN_TEXT" value="138" />
-          <entry key="Python" value="413" />
-          <entry key="YAML" value="38" />
-=======
           <entry key="PLAIN_TEXT" value="487" />
-          <entry key="Python" value="1348" />
-          <entry key="YAML" value="25" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+          <entry key="Python" value="1456" />
+          <entry key="YAML" value="305" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.file.extensions.open" />
-      <usages-collector id="statistics.file.types.open" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -251,22 +203,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="333">
-              <caret line="176" column="40" selection-start-line="176" selection-start-column="40" selection-end-line="176" selection-end-column="40" />
-=======
-            <state relative-caret-position="217">
-=======
-            <state relative-caret-position="-1568">
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
-=======
             <state relative-caret-position="17">
               <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -274,20 +212,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/multilayer_perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="323">
-              <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-=======
-            <state relative-caret-position="378">
-=======
-            <state relative-caret-position="2176">
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
-              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
+            <state relative-caret-position="1836">
+              <caret line="114" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -298,15 +227,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NN_modules/NN_Keras_V2.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="2091">
-=======
             <state relative-caret-position="1836">
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-            <state relative-caret-position="1836">
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
               <caret line="123" column="66" selection-start-line="123" selection-start-column="66" selection-end-line="123" selection-end-column="66" />
               <folding>
                 <element signature="e#254#291#0" expanded="true" />
@@ -318,18 +239,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configs/config_mlp.yml">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="69">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-=======
-            <state relative-caret-position="255">
-              <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-            <state relative-caret-position="289">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+            <state>
+              <caret selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -337,15 +248,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NN_modules/NN_Optimization_GridSearchCV.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="2805">
-=======
             <state relative-caret-position="2516">
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-            <state relative-caret-position="2516">
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
               <caret line="165" column="45" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="45" />
               <folding>
                 <element signature="e#254#291#0" expanded="true" />
@@ -357,8 +260,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="85">
+              <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -402,19 +305,9 @@
         <option value="$USER_HOME$/Python/WinPython-64bit-3.6.3.0Qt5/python-3.6.3.amd64/Lib/site-packages/tensorflow/contrib/legacy_seq2seq/python/ops/seq2seq.py" />
         <option value="$PROJECT_DIR$/NN_modules/NN_Optimization_GridSearchCV.py" />
         <option value="$PROJECT_DIR$/NN_modules/NN_Keras_V2.py" />
-<<<<<<< HEAD
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/run_v2.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/algorithms/multilayer_perceptron.py" />
-=======
-        <option value="$PROJECT_DIR$/algorithms/multilayer_perceptron.py" />
-        <option value="$PROJECT_DIR$/run_v2.py" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-        <option value="$PROJECT_DIR$/algorithms/multilayer_perceptron.py" />
-        <option value="$PROJECT_DIR$/run_v2.py" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
         <option value="$PROJECT_DIR$/configs/config_mlp.yml" />
       </list>
     </option>
@@ -427,9 +320,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="2420" />
-    <option name="height" value="1370" />
+    <option name="y" value="2" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -604,9 +497,6 @@
       <module name="Bankruptcy_Prediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -669,34 +559,6 @@
       <option name="project" value="LOCAL" />
       <updated>1539245422789</updated>
     </task>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <task id="LOCAL-00004" summary="Laptop filepaths added to yaml and util">
-      <created>1539280037152</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1539280037152</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Working batch optimization (change batch size and learning rate in config file)">
-      <created>1539284629902</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1539284629903</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
-=======
-    <task id="LOCAL-00004" summary="V2 - Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized">
-      <created>1539247044806</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1539247044806</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
-=======
     <task id="LOCAL-00004" summary="V2 - Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized">
       <created>1539247044806</created>
       <option name="number" value="00004" />
@@ -712,34 +574,18 @@
       <updated>1539295730056</updated>
     </task>
     <option name="localTasksCounter" value="6" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.11610738" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.09640103" />
       <window_info id="Structure" order="2" weight="0.2525707" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50064266" side_tool="true" weight="0.39838493" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" order="2" visible="true" weight="0.48533726" />
-=======
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.09254499" />
-      <window_info id="Structure" order="2" weight="0.2525707" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50064266" side_tool="true" weight="0.39838493" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="1" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.36877525" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.09383033" />
-      <window_info id="Structure" order="2" weight="0.2525707" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50064266" side_tool="true" weight="0.39838493" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="1" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.36877525" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32950193" />
+      <window_info anchor="bottom" id="Python Console" order="2" visible="true" weight="0.38761777" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.24340177" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -752,28 +598,12 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="0" weight="0.32871014" />
       <window_info anchor="right" id="Database" order="1" weight="0.32969153" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info active="true" anchor="right" id="SciView" order="2" sideWeight="0.45950705" visible="true" weight="0.40134227" />
-=======
-      <window_info anchor="right" id="SciView" order="2" sideWeight="0.45842218" weight="0.31876606" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-      <window_info anchor="right" id="SciView" order="2" sideWeight="0.45842218" weight="0.31876606" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+      <window_info active="true" anchor="right" id="SciView" order="2" sideWeight="0.45454547" visible="true" weight="0.31876606" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="right" id="Commander" order="4" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info anchor="right" x="0" y="0" width="338" height="640" id="Documentation" order="7" sideWeight="0.54049295" side_tool="true" weight="0.31876332" />
-=======
-      <window_info anchor="right" x="0" y="0" width="338" height="640" id="Documentation" order="7" sideWeight="0.5415778" side_tool="true" weight="0.31876606" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-      <window_info anchor="right" x="0" y="0" width="338" height="640" id="Documentation" order="7" sideWeight="0.5415778" side_tool="true" visible="true" weight="0.31876606" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
+      <window_info anchor="right" x="0" y="0" width="338" height="640" id="Documentation" order="7" sideWeight="0.54545456" side_tool="true" weight="0.31876606" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -822,20 +652,9 @@
     <MESSAGE value="Changed yaml_path and /data path for desktop - remember to add laptop's path as a separate line" />
     <MESSAGE value="Added average run time ('run_time') to summary output" />
     <MESSAGE value="Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <MESSAGE value="Laptop filepaths added to yaml and util" />
-    <MESSAGE value="Working batch optimization (change batch size and learning rate in config file)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working batch optimization (change batch size and learning rate in config file)" />
-=======
-    <MESSAGE value="V2 - Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized" />
-    <option name="LAST_COMMIT_MESSAGE" value="V2 - Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized" />
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
-=======
     <MESSAGE value="V2 - Validation accuracy vs run time added as an output plot. Optimum batch size occurs when the rate of performance change (change in accuracy per unit time) is maximized" />
     <MESSAGE value="Committing at home" />
     <option name="LAST_COMMIT_MESSAGE" value="Committing at home" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BankruptcyPrediction.py" />
@@ -920,13 +739,7 @@
     <entry file="file://$USER_HOME$/Python/WinPython-64bit-3.6.3.0Qt5/python-3.6.3.amd64/Lib/site-packages/sklearn/model_selection/_split.py" />
     <entry file="file://$USER_HOME$/Python/WinPython-64bit-3.6.3.0Qt5/python-3.6.3.amd64/Lib/site-packages/sklearn/metrics/classification.py" />
     <entry file="file://$PROJECT_DIR$/algorithms/algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/NN_modules/NN_Keras_V1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -935,19 +748,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$USER_HOME$/Desktop/Masters Thesis PyCharm Project V2/Bankruptcy_Prediction/NN_modules/NN_Optimization_GridSearchCV.py" />
-    <entry file="file://$USER_HOME$/Desktop/Masters Thesis/run.py" />
-    <entry file="file://$USER_HOME$/Desktop/Masters Thesis PyCharm Project V2/Bankruptcy_Prediction/run_v2.py" />
-    <entry file="file://$USER_HOME$/Python/WinPython-64bit-3.6.3.0Qt5/python-3.6.3.amd64/Lib/site-packages/matplotlib/axes/_base.py" />
-    <entry file="file://$USER_HOME$/Python/WinPython-64bit-3.6.3.0Qt5/python-3.6.3.amd64/Lib/site-packages/IPython/core/interactiveshell.py" />
-    <entry file="file://$PROJECT_DIR$/NN_modules/NN_Keras_V2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-=======
-=======
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
     <entry file="file://$USER_HOME$/Desktop/Masters Thesis PyCharm Project V2/Bankruptcy_Prediction/NN_modules/NN_Optimization_GridSearchCV.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -976,29 +776,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3587">
           <caret line="248" column="32" selection-start-line="248" selection-start-column="32" selection-end-line="248" selection-end-column="32" />
-<<<<<<< HEAD
-=======
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/multilayer_perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+        <state relative-caret-position="1836">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NN_modules/NN_Keras_V2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
-<<<<<<< HEAD
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
           <caret line="123" column="66" selection-start-line="123" selection-start-column="66" selection-end-line="123" selection-end-column="66" />
           <folding>
             <element signature="e#254#291#0" expanded="true" />
@@ -1008,15 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NN_modules/NN_Optimization_GridSearchCV.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="2805">
-=======
         <state relative-caret-position="2516">
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-        <state relative-caret-position="2516">
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
           <caret line="165" column="45" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="45" />
           <folding>
             <element signature="e#254#291#0" expanded="true" />
@@ -1024,123 +809,39 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_processors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/data_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/run_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1568">
+        <state relative-caret-position="17">
           <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/data_processors.py">
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/config_mlp.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config_mlp.yml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="323">
-          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-=======
-        <state relative-caret-position="378">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-=======
-        <state relative-caret-position="255">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-        <state relative-caret-position="289">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/multilayer_perceptron.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="333">
-          <caret line="176" column="40" selection-start-line="176" selection-start-column="40" selection-end-line="176" selection-end-column="40" />
-=======
-        <state relative-caret-position="217">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
->>>>>>> 10c4f85635d3763f0850700d6fd79626cdf1f65e
-=======
-        <state relative-caret-position="378">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
->>>>>>> 88614278e97ae0d507537230f9c885ef87f17c26
-=======
-        <state relative-caret-position="17">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
->>>>>>> fcaca3c9d02668b8d71486701469f88e11db628a
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config_mlp.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <caret selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
     </entry>
